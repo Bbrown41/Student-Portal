@@ -1,5 +1,6 @@
 body {
     font-family: 'Cabin', Arial, sans-serif;
+    background-color: #FFF;
 }
 
 /* Top Navigation Bar */
@@ -35,24 +36,24 @@ body {
     display: flex;
     width: 100%;
     min-height: 12em;
-    padding-left: 1em;
-  }
+    padding-left: 5%;
+}
 
-  #banner-text {
+#banner-text {
     flex: 70%;
-    margin-top: 8em;
+    margin-top: 10%;
     padding-bottom: 2em;
-  }
+ }
 
-  #banner-text h1{
-      color: #FFF;
-      font-size: 3.5em;
-      font-weight: bold;
-      text-align: left;
-      padding-bottom: 0.5em;
-  }
+#banner-text h1{
+    color: #FFF;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 0.5em;
+}
 
-  #banner-text h2{
+#banner-text h2{
     color: #FFF;
     font-size: 2em;
     font-weight: bold;
@@ -61,19 +62,18 @@ body {
 
 #banner-search {
     flex: 30%;
-    margin-top: 2em;
+    margin-top: 5%;
 }
+
 #banner-search button {
     background: #EEE;
     color: #00529F;
     font-size: 1em;
-    border: none;
-    cursor: pointer;
     width: 10%;
     height: 2em;
-    padding-top: 0.4em;
-    padding-bottom: 10em;
-    border: 1px solid #EEE; 
+    padding-top: 0.3em;
+    padding-bottom: 1.7em;
+    border: 1px solid #EEE;
 }
 #banner-search input[type=text]{
     float: left;
@@ -82,73 +82,9 @@ body {
     width: 70%;
     height: 2em;
     padding: 1em;
-    border: 1px solid #ccc; 
-}
-/*foooter Banner*/
-#bannerFooter {
-    background-image: url('images/blue.jpg');
-    background-position: left top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    width: 100%;
-    min-height: 12em;
-    padding-left: 1em;
-  }
-
-  #banner-textFooter{
-    flex: 70%;
-    margin-top: 8em;
-    padding-bottom: 2em;
-  }
-
-  #banner-textFooter h1{
-      color: #FFF;
-      font-size: 3.5em;
-      font-weight: bold;
-      text-align: left;
-      padding-bottom: 0.5em;
-  }
-
-  #banner-textFooter h2{
-    color: #FFF;
-    font-size: 2em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-  #banner-textFooter h3{
-    color: #FFF;
-    font-size: 2em;
-    font-weight: bold;
-	font-size: 16px;
-
+    border: 1px solid #ccc;
 }
 
-#banner-search {
-    flex: 30%;
-    margin-top: 2em;
-}
-#banner-search button {
-    background: #EEE;
-    color: #00529F;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-    width: 10%;
-    height: 2em;
-    padding-top: 0.4em;
-    padding-bottom: 1.6em;
-    border: 1px solid #EEE; 
-}
-#banner-search input[type=text]{
-    float: left;
-    display: block;
-    text-align: left;
-    width: 70%;
-    height: 2em;
-    padding: 1em;
-    border: 1px solid #ccc; 
-}
 /* Main Navigation */
 nav {
     color: #000;
@@ -176,11 +112,12 @@ nav li, nav span {
 
 /* Main Content*/
 main {
-    padding: 1em;
-    background-color: #00529F;
-    color: white;
+    padding: 2%;
+    background-color: #FFF;
+    color: #000;
 }
 
+/* Announcements */
 main .cards {
     display: flex;
     flex-wrap: wrap;
@@ -195,8 +132,9 @@ main .card {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    width: 80%;
+    width: 70%;
     margin-bottom: 10px;
+    background-color: #EEE;
   }
 
 main .card h5{
@@ -211,12 +149,96 @@ main .card:hover {
   /* Add some padding inside the card container */
 main .container {
     padding: 2px 16px;
-  }
-
-footer p {
-	font-size: 90%;
-	text-align: left;
 }
-footer h1{
-	
+
+
+/* Calendar */
+aside {
+    float: right;
+    color: #000;
+    background-color: #FFFCE0;
+    width: 20%;
+    margin-right: 5%;
+}
+
+aside h1 {
+    background-color: #FFCC66;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    color: #FFF;
+    background-color: #00529F;
+    padding: 2% 15%;
+}
+
+footer h1 {
+    color: #FFF;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+footer h2 {
+    color: #FFF;
+    font-size: 1em;
+}
+
+#footer-middle{
+    text-align: center;
+}
+
+.socialmedia {
+    font-size: 2.5em;
+
+}
+
+.socialmedia a{
+    color: #FFF;
+    padding: 0.1em;
+}
+
+.socialmedia a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.contact a {
+    padding: 0.5em;
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.contact a:hover {
+    padding: 0.5em;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#footer-search {
+    padding-left: 15%;
+}
+#footer-search button {
+    background: #EEE;
+    color: #00529F;
+    font-size: 1em;
+    width: 10%;
+    height: 2em;
+    padding-top: 0.3em;
+    padding-bottom: 1.7em;
+    border: 1px solid #EEE;
+}
+#footer-search input[type=text]{
+    float: left;
+    display: block;
+    text-align: left;
+    width: 70%;
+    height: 2em;
+    padding: 1em;
+    border: 1px solid #ccc;
 }

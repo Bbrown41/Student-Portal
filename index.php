@@ -38,6 +38,7 @@
                     </li>
                 </ul>
             </div>
+
             <!-- Banner -->
             <div id="banner">
                 <div id="banner-text">
@@ -52,12 +53,17 @@
                 </div>
             </div>
         </header>
+
          <!-- Main Navigation -->
          <nav class="navbar navbar-expand-sm sticky-top">
                 <a class="navbar-brand" href="#">
                     <img src="images/btc-logo.png" alt="BTC Logo" width="45%";>
                 </a>
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <span class="navbar-text">|</span>
                     <li class="nav-item">
                         <a class="nav-link" href="Programs.html">FLEX Programs & Classes</a>
                     </li>
@@ -100,7 +106,7 @@
 
                     if ($result->num_rows > 0) {
                         echo "<div class='cards'>";
-                        while($row = $result->fetch_assoc()) {
+                        while($row = $result->fetch_assoc()) {  // Need to change this to only show 10-20 most recent announcements.
                             
                             $title=$row["title"];
                             $content=$row["content"];
@@ -129,39 +135,51 @@
 
         </main>
 
-        <footer>
-            <!--     -->
-            <div id="bannerFooter">
-                <div id="banner-textFooter">
-                <div id="banner-searchFooter">
-                    <form action="/#.php"><!--TO DO: Replace with actual php link once created -->
-                        <input type="text" placeholder="Search" name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-					<h2>Blackhawk Technical College</h2>
-					<h3>6004 S County Roag G, Janesville, WI 53546<h3/>
-					<h3>(608)756-6900<h3/>
-					<h3>info@blackhawk.edu<h3/></div>
-						            <div class="top-nav">
 
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://blackhawk.edu">BTC Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://mybtc.blackhawk.edu">MyBTC</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://blackhawk.blackboard.com">Blackboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://outlook.office.com/blackhawk.edu">Email</a>
-                    </li>
-                </ul>
-            </div>
-                    </form>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <!-- Name and Address -->
+                <div class="col" id="footer-left">
+                    <h1>Blackhawk Technical College</h1>
+                    <h2>6004 S County Road G, Janesville, WI 53546</h2>
+                </div>
+
+                <!-- Social Media Links & Contact Info -->
+                <div class="col" id="footer-middle">
+                    <span class="socialmedia">
+                        <a href="https://www.facebook.com/blackhawktech/">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                        <a href="https://twitter.com/blackhawk_tech">
+                            <i class="fa fa-twitter-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/blackhawktech/?hl=en">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/blackhawk-technical-college/">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCA9LW5SgcsuW9p0nApelaZw">
+                            <i class="fa fa-youtube-square"></i>
+                        </a>
+                    </span>
+                    <p>
+                        <span class="contact"><a href="tel:6087586900">(608) 758-6900</a></span>
+                        <span class="contact"><a href="mailto:info@blackhawk.edu">info@blackhawk.edu</a></span>
+                    </p>
+                </div>
+
+                <!-- Search -->
+                <div class="col" id="footer-right">
+                    <div id="footer-search">
+                        <form action="/#.php"><!--TO DO: Replace with actual php link once created -->
+                            <input type="text" placeholder="Search" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
                 </div>
             </div>
-			<div/>
         </footer>
     </body>
 </html>
